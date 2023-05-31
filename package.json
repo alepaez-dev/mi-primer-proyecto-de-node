@@ -1,0 +1,24 @@
+{
+  "name": "mi-primer-proyecto-de-node",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto de Node otra descripcion",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo 'testeando'",
+    "dev": "echo 'estamos en modo desarrollo'"
+  },
+  "keywords": [
+    "kodemia",
+    "node",
+    "backend"
+  ],
+  "author": {
+    "name": "Alejandra",
+    "email": "al3paez@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "yargs-parser": "^21.1.1"
+  }
+}
