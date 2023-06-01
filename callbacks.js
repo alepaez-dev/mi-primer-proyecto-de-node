@@ -35,4 +35,14 @@ function irACasa(callback) {
   callback()
 }
 
+// Callback con funcion anonima
+irACasa(() => console.log("Ya llegue a la casa ama"));
+// Callback declarada
 irACasa(avisar);
+
+
+const fs = {
+  readFile: () => { console.log("leyendo un archivo") }
+}
+
+fs.readFile();
