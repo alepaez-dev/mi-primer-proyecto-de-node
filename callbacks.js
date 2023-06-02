@@ -113,5 +113,15 @@ darInformes(koder, (error, koderInformado) => {
   })
 });
 
+/**
+ * Ejercicio:
+ * Pastel
+ * 1 - Leer la receta
+ * 2 - Conseguir los ingredientes
+ * 3 - Preparacion de la masa
+ * 4 - Hornear el pastel
+ * 5 - Decorar el pastel
+ */
+
 
 
