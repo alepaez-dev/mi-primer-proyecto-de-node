@@ -55,7 +55,6 @@ const darInformes = (koder, entrevistar) => {
     }
     // Solucion
     // callback -> entrevistamelo porque ya se le dieron informes
-    console.log("el koder ya se le dieron informes", koder);
     entrevistar(error, koder);
   }, 2000)
 }
@@ -66,7 +65,6 @@ const seEntrevisto = (koderInformado, pagar) => {
     if(!koderInformado.seEntrevisto) {
       error = "El koder necesita ser entrevistado"
     }
-    console.log("al koder ya se le entrevisto", koderInformado)
     pagar(error, koderInformado);
   }, 1000)
 }
@@ -78,7 +76,6 @@ const sePago = (koderEntrevistado, inscribir) => {
     if(!koderEntrevistado.sePago) {
       error = "El koder necesita pagar"
     }
-    console.log("El koder ya pago", koderEntrevistado);
     inscribir(error, koderEntrevistado)
   }, 2000)
 }
@@ -86,7 +83,6 @@ const sePago = (koderEntrevistado, inscribir) => {
 const inscribir = (koderPagado) => {
   setTimeout(() => {
     koderPagado.seInscribio = true
-    console.log("El koder ya se inscribio!!!!", koderPagado);
   }, 4000)
 }
 // Callbacks anonimas
@@ -96,6 +92,7 @@ darInformes(koder, (error, koderInformado) => {
     return;
   }
   // Koder ya esta informado
+  console.log("koderInformado", koderInformado)
   seEntrevisto(koderInformado, (error, koderEntrevistado) => {
     if(error) {
       console.log(error)
