@@ -1,0 +1,1 @@
+console.log("Este es el otro-archivo.js")
