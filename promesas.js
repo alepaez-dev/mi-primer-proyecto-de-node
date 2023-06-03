@@ -76,14 +76,17 @@ leerReceta(pastel)
         conseguirIngredientes(pastelLeido)
             .then((pastelConIngredientes) => {
                 // Ya conseguimos los ingredientes
-                console.log("pastelConIngredientes linea 79", pastelConIngredientes);
+                console.log(
+                    "pastelConIngredientes linea 79",
+                    pastelConIngredientes
+                );
                 prepararMasa(pastelConIngredientes) // -> pendiente
                     .then((pastelConIngredientes) => {
-                        console.log("pastel", pastelConIngredientes)
+                        console.log("pastel", pastelConIngredientes);
                     })
                     .catch((error) => {
-                        console.log(error)
-                    })
+                        console.log(error);
+                    });
             })
             .catch((error) => {
                 // Aquii no se conseguieron los ingredientes
